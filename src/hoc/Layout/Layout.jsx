@@ -5,12 +5,12 @@ class Layout extends Component {
     
     render(){
         return(
-            <>
+            <div>
                 <Toolbar/>
                 <main>
                     {this.props.children}
                 </main>
-            </>
+            </div>
         )
     }
 }
