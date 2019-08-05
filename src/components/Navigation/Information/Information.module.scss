@@ -1,0 +1,14 @@
+.InformationHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .RightSection{
+        display: flex;
+        img{
+            margin-right: 20px;
+        }
+        .Select{
+            width: 100px
+        }
+    }
+}

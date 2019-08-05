@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import classes from './Information.module.scss';
+import * as classes from './Information.module.scss';
 import {Data} from '../../../Data';
 import Select from 'react-select';
+import InformationNavigation from './NavigationItems/NavigationItems';
+
 
 class Information extends Component{
     state = {
@@ -19,22 +21,26 @@ class Information extends Component{
                 label: 'EUR',
                 value: 'eur'
             }
-        ]
+        ],
+        
     }
     handleChange = selectedOption => {
         this.setState({ selectedOption });
-        console.log(`Option selected:`, selectedOption);
     };
     
     render(){
         return(
             <header className={classes.InformationHeader}>
-                <img src={Data.paymentMethods.source} />
-                <Select
-                    value={this.state.selectedOption}
-                    onChange={this.handleChange}
-                    options={this.state.currencies}
-                />
+                <div className={classes.RightSection}>
+                    <img src={Data.paymentMethods.source} alt={Data.paymentMethods.name}/>
+                    <Select
+                        value={this.state.selectedOption}
+                        onChange={this.handleChange}
+                        options={this.state.currencies}
+                        className={classes.Select}
+                    />
+                </div>
+                <InformationNavigation />
             </header>
         )
     }

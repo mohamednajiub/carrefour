@@ -1,0 +1,41 @@
+@import '../../../../../assets/scss/color_variables';
+@import '../../../../../assets/scss/screen_sizes';
+.NavigationItem {
+    display: flex;
+    height: 100%;
+    width: auto;
+    align-items: center;
+    position: relative;
+    a {
+        color: #fff;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        padding: 16px 10px;
+        display: flex;
+        &:hover,
+        &:active,
+        &.active {
+            background-color: $white;
+            border: 1px solid $blue_color;
+            color: $blue_color;
+            @media (min-width: $large_tablet_min_width) {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-top: 15px solid transparent;
+                    border-bottom: 15px solid transparent;
+                    border-left: 15px solid $blue_color;
+                    left: 100%;
+                    top: 50%;
+                    transform: translateY(-50%)
+                }
+            }
+        }
+        svg{
+            margin-right: 5px
+        }
+    }
+}
