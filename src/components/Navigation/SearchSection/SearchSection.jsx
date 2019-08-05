@@ -7,6 +7,7 @@ import {Formik, Form, Field, ErrorMessage} from 'formik';
 import Button from '../../UI/Button/Button';
 import {MdSearch} from 'react-icons/md';
 import Cart from '../Cart/Cart';
+import Notifications from '../../UI/Notifications/Notifications'
 
 class SearchSection extends Component{
     state = {
@@ -49,6 +50,7 @@ class SearchSection extends Component{
                     />
                 </div>
                 <Cart />
+                <Notifications numberOfNotifications={5} />
             </section>
         )
     }

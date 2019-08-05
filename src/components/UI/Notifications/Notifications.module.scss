@@ -1,0 +1,20 @@
+@import '../Button/Button.module.scss';
+.Button{
+    background-color: $gray;
+    color: $white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    
+    &:before{
+        content: '';
+        width: 0;
+        border-width: 0px 10px 10px;
+        border-style: solid;
+        border-color: $gray transparent ;
+        transform: rotate(-90deg);
+        position: absolute;
+        left: -50%;
+    }
+}
