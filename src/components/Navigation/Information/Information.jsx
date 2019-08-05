@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import * as classes from './Information.module.scss';
 import {Data} from '../../../Data';
 import Select from 'react-select';
-import InformationNavigation from './NavigationItems/NavigationItems';
+import InformationNavigation from '../NavigationItems/NavigationItems';
 
 
 class Information extends Component{
