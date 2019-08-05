@@ -4,10 +4,12 @@ import {Data} from '../../../Data';
 import Select from 'react-select';
 import InformationNavigation from '../NavigationItems/NavigationItems';
 
-
 class Information extends Component{
     state = {
-        selectOption: null,
+        selectedOption: {
+            label: 'EUR',
+            value: 'eur'
+        },
         currencies: [
             {
                 label: 'EGP',
@@ -22,8 +24,8 @@ class Information extends Component{
                 value: 'eur'
             }
         ],
-        
     }
+
     handleChange = selectedOption => {
         this.setState({ selectedOption });
     };

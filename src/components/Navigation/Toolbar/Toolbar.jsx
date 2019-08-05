@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
 import classes from './Toolbar.module.scss';
 
-import Information from '../Information/Information'
+import Information from '../Information/Information';
+import SearchSection from '../SearchSection/SearchSection';
 
 class Toolbar extends Component{
     render(){
         return(
-            <header className={classes.Toolbar}>
+            <header>
+                <div className={classes.Toolbar}>
+                    <div className="container">
+                        <Information />
+                    </div>
+                </div>
                 <div className="container">
-                    <Information />
+                    <SearchSection />
                 </div>
             </header>
         )
