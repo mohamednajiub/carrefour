@@ -27,9 +27,9 @@ class InformationNavigation extends Component{
         return(
             <nav>
                 <ul className={classes.InformationNavigation}>
-                    {this.state.linkItems.map(link=>{
+                    {this.state.linkItems.map((link, index)=>{
                         return (
-                            <NavigationItem link={link.link}>
+                            <NavigationItem key={index}  link={link.link}>
                                 {link.icon}
                                 {link.title}
                             </NavigationItem>

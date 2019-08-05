@@ -1,0 +1,28 @@
+@import '../../../assets/scss/color_variables';
+.Button {
+    background-color: transparent;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.Button:disabled{
+    color: $black;
+    background-color: $gray;
+    cursor: not-allowed;
+}
+.Default {
+    background-color: $blue_color;
+    color: $white;
+}
+.Success {
+    color: #5C9210;
+}
+.Danger {
+    color: $red;
+}

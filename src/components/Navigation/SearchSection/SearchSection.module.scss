@@ -1,5 +1,25 @@
-.MiddleSection{
+@import '../../../assets/scss/Input.module.scss';
+.Actions{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .SearchSection{
+        display: flex;
+        align-items: center;
+        .Categories{
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            width: 100%
+        }
+        .SearchForm{
+            display: flex;
+            align-items: center;
+            
+            .InputElement{
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                width: 200px;
+            }
+        }
+    }
 }
