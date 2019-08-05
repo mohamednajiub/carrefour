@@ -3,10 +3,6 @@
     background-color: $gray;
     color: $white;
     position: relative;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    
     &:before{
         content: '';
         width: 0;

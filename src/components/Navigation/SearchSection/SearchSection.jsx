@@ -35,6 +35,19 @@ class SearchSection extends Component{
                         onChange={this.handleChange}
                         options={Categories}
                         className={classes.Categories}
+                        styles={{
+                            control: () => ({
+                                // none of react-select's styles are passed to <Control />
+                                width: 200,
+                                display: 'flex',
+                                border: '1px solid #ccc',
+                                borderRadius: "5px",
+                                borderRight: 'none',
+                                borderTopRightRadius: 0,
+                                borderBottomRightRadius: 0,
+                                height: '35px'
+                            }),
+                        }}
                     />
                     <Formik
                         enableReinitialize={true}
@@ -45,19 +58,21 @@ class SearchSection extends Component{
                                     <Field type="search" id="search" name="search" placeholder="Search" className={classes.InputElement}/>
                                     <ErrorMessage name="search" />
                                 </div>
-                                <Button type="submit" btnType="Default" disabled={FormikProps.isSubmitting}><MdSearch /></Button>
+                                <Button className={classes.Submit} type="submit" btnType="Default" disabled={FormikProps.isSubmitting}><MdSearch /></Button>
                             </Form>
                         )}
                     />
                 </div>
-                <LinkButton Link='/cart'>
-                    <MdShoppingCart />
-                </LinkButton>
-                <Notifications numberOfNotifications={5} />
-                <LinkButton Link='/login' className={classes.Login}>
-                    <FaUserPlus />
-                    Login
-                </LinkButton>
+                <div className={classes.ButtonsSection}>
+                    <LinkButton Link='/cart'>
+                        <MdShoppingCart />
+                    </LinkButton>
+                    <Notifications numberOfNotifications={5} className={classes.Notifications}/>
+                    <LinkButton Link='/login' className={classes.Login}>
+                        <FaUserPlus />
+                        Login
+                    </LinkButton>
+                </div>
             </section>
         )
     }

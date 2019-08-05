@@ -3,7 +3,7 @@ import * as classes from './Notifications.module.scss';
 
 const notifications = (props) => {
     return (
-        <div className={classes.Button}>
+        <div className={[props.className, classes.Button].join(' ')}>
             {props.numberOfNotifications}
         </div>
     )
