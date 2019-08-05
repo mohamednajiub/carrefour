@@ -5,8 +5,9 @@ import CarrfourLogo from '../../Logos/Logo';
 import {Categories, Data} from '../../../Data'
 import {Formik, Form, Field, ErrorMessage} from 'formik';
 import Button from '../../UI/Button/Button';
-import {MdSearch} from 'react-icons/md';
-import Cart from '../Cart/Cart';
+import {MdSearch, MdShoppingCart} from 'react-icons/md';
+import {FaUserPlus} from "react-icons/fa";
+import LinkButton from '../../UI/LinkButton/LinkButton';
 import Notifications from '../../UI/Notifications/Notifications'
 
 class SearchSection extends Component{
@@ -49,8 +50,14 @@ class SearchSection extends Component{
                         )}
                     />
                 </div>
-                <Cart />
+                <LinkButton Link='/cart'>
+                    <MdShoppingCart />
+                </LinkButton>
                 <Notifications numberOfNotifications={5} />
+                <LinkButton Link='/login' className={classes.Login}>
+                    <FaUserPlus />
+                    Login
+                </LinkButton>
             </section>
         )
     }
