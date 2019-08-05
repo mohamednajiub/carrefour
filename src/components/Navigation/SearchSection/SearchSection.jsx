@@ -6,6 +6,7 @@ import {Categories, Data} from '../../../Data'
 import {Formik, Form, Field, ErrorMessage} from 'formik';
 import Button from '../../UI/Button/Button';
 import {MdSearch} from 'react-icons/md';
+import Cart from '../Cart/Cart';
 
 class SearchSection extends Component{
     state = {
@@ -47,6 +48,7 @@ class SearchSection extends Component{
                         )}
                     />
                 </div>
+                <Cart />
             </section>
         )
     }
