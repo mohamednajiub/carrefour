@@ -1,0 +1,38 @@
+@import '../../assets/scss/color_variables';
+.Slider {
+    width: 100%;
+    .slick-list{
+        height: 100% !important;
+        img {
+            height: 450px !important;
+            margin: auto;
+            width: 100% !important;
+        }
+    }
+}
+.Slide{
+    position: relative;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    width: calc(100% /6 );
+    .ImageContainer{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: $lite_gray;
+        overflow: hidden;
+        position: relative;
+        img{
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+    }
+}

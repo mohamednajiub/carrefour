@@ -7,7 +7,7 @@ import {CarouselData} from '../../Data';
 import {FaAngleRight} from 'react-icons/fa'
 import LinkButton  from '../UI/LinkButton/LinkButton'
 
-class SliderComponent extends Component {
+class Carousel extends Component {
   render() {
     const settings = {
         dots: true,
@@ -53,4 +53,4 @@ class SliderComponent extends Component {
   }
 }
 
-export default SliderComponent;
+export default Carousel;
