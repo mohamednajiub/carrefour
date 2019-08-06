@@ -29,7 +29,7 @@ class SearchSection extends Component{
         return(
             <section className={classes.Actions}>
                 <CarrfourLogo source={Data.logos.carrfour.source} name={Data.logos.carrfour.title}/>
-                <div class={classes.SearchSection}>
+                <div className={classes.SearchSection}>
                     <Select
                         value={this.state.selectedCategory}
                         onChange={this.handleChange}

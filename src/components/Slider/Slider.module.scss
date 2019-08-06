@@ -1,6 +1,6 @@
+@import '../../assets/scss/color_variables';
 .Slider {
     width: 100%;
-    background: #419be0;
     .slick-list{
         height: 100% !important;
         
@@ -16,4 +16,33 @@
     img{
         width: 100%
     }
+}
+.Dots{
+    bottom: 20px !important;
+    z-index: 2;
+    text-align: right !important;
+    right: 40px;
+    li{
+        button{
+            &::before{
+                content: '' !important;
+                width: 20px !important;
+                height: 20px !important;
+                background-color: $white;
+                opacity: 1 !important;
+                border-radius: 50%;
+            }
+        }
+        &.slick-active{
+            button{
+                &::before{
+                    background-color: $red;
+                }
+            }
+        }
+    }
+}
+
+.Dots li.slick-active button:before{
+    background-color: $red !important;
 }

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "./Slider.module.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import classes from "./Slider.module.scss";
+import * as classes from "./Slider.module.scss";
 import {CarouselData} from '../../Data';
 
 class SliderComponent extends Component {
@@ -18,11 +18,12 @@ class SliderComponent extends Component {
         slidesToScroll: 1,
         accessibility: false,
         arrows: false,
-        pauseOnHover: true
+        pauseOnHover: true,
+        dotsClass: ['slick-dots', classes.Dots].join(' ')
     };
     return (
       <div className={classes.Slider}>
-        <Slider {...settings} className={classes.customStyle}>
+        <Slider {...settings}>
             {
                 CarouselData.map((carouselItem, index)=>{
                     return (
