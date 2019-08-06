@@ -45,7 +45,6 @@ class Toolbar extends Component{
                 title: 'Clothes',
                 icon: <FaTshirt />
             },
-            ,
             {
                 link: '/food',
                 title: 'Food',

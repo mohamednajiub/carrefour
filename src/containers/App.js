@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.module.scss';
 import Layout from '../hoc/Layout/Layout';
-import Slider from '../components/Slider/Slider'
+import Carousel from '../components/Carousel/Carousel'
 
 function App() {
   return (
     <div className="App">
       <Layout>
-        <Slider />
+        <Carousel />
       </Layout>
     </div>
   );
