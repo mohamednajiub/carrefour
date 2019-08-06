@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.module.scss';
 import Layout from '../hoc/Layout/Layout';
+import Slider from '../components/Slider/Slider'
 
 function App() {
   return (
     <div className="App">
       <Layout>
-        main
+        <Slider />
       </Layout>
     </div>
   );
