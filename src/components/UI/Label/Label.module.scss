@@ -1,0 +1,23 @@
+@import '../../../assets/scss/color_variables';
+.Label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    .Icon{
+        background-color: $blue_color;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: $white;
+        font-size: 25px;
+        margin-right: 20px
+    }
+    h4{
+        color: $black;
+        text-transform: uppercase;
+    }
+    h5{
+        color: $gray
+    }
+}
