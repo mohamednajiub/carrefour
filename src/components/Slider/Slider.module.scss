@@ -1,10 +1,19 @@
 .Slider {
     width: 100%;
     background: #419be0;
-    // padding: 0 40px;
-    .slick-slide {
+    .slick-list{
+        height: 100% !important;
+        
         img {
+            height: 450px !important;
             margin: auto;
+            width: 100% !important;
         }
+    }
+}
+.Slide{
+    height: 450px !important;
+    img{
+        width: 100%
     }
 }

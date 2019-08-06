@@ -4,6 +4,7 @@ import "./Slider.module.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import classes from "./Slider.module.scss";
+import {CarouselData} from '../../Data';
 
 class SliderComponent extends Component {
   render() {
@@ -21,19 +22,16 @@ class SliderComponent extends Component {
     };
     return (
       <div className={classes.Slider}>
-        <Slider {...settings}>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
-          <div>
-            <img src="http://placekitten.com/g/400/200" />
-          </div>
+        <Slider {...settings} className={classes.customStyle}>
+            {
+                CarouselData.map((carouselItem, index)=>{
+                    return (
+                        <div key={index} className={classes.Slide}>
+                            <img src={carouselItem.source} alt={carouselItem.title} />
+                        </div>
+                    )
+                })
+            }
         </Slider>
       </div>
     );
