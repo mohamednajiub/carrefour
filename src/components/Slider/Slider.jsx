@@ -23,22 +23,20 @@ class SliderComponent extends Component {
     };
     return (
         <div className={classes.Slider}>
-            <div className="container">
-                <Slider {...settings}>
-                    {
-                        CategoriesSlider.map((sliderItem, index)=>{
-                            return (
-                                <div key={index} className={classes.Slide}>
-                                    <div className={classes.ImageContainer}>
-                                        <img src={sliderItem.source} alt={sliderItem.title} />
-                                    </div>
-                                    <h3>{sliderItem.title}</h3>
+            <Slider {...settings}>
+                {
+                    CategoriesSlider.map((sliderItem, index)=>{
+                        return (
+                            <div key={index} className={classes.Slide}>
+                                <div className={classes.ImageContainer}>
+                                    <img src={sliderItem.source} alt={sliderItem.title} />
                                 </div>
-                            )
-                        })
-                    }
-                </Slider>
-            </div>
+                                <h3>{sliderItem.title}</h3>
+                            </div>
+                        )
+                    })
+                }
+            </Slider>
         </div>
     );
   }
