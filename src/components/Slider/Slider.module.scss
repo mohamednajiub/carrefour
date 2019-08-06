@@ -13,8 +13,52 @@
 }
 .Slide{
     height: 450px !important;
+    position: relative;
     img{
         width: 100%
+    }
+    .Overlay{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background-color: $white;
+        border-bottom: 2px solid $red;
+        width: 50%;
+        height: 80%;
+        color: black;
+        padding: 20px 20px 20px 85px;
+        h2{
+            line-height: 1.5;
+            font-weight: 100;
+            font-size: 2.2rem;
+            font-family: 'comfortaa';
+            &::first-line {
+                color: $blue_color
+            }
+        }
+        p{
+            line-height: 1.5;
+            font-family: 'comfortaa';
+            color: $gray;
+            margin-top: 20px
+        }
+        .SliderLink{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: $white;
+            background-color: $blue_color;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            align-content: center;
+            right: 20px;
+            bottom: 40px
+        }
     }
 }
 .Dots{
