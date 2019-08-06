@@ -1,7 +1,23 @@
+@import '../../../assets/scss/color_variables';
 .InformationHeader{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    .InformationNav{
+        li{
+            a{
+                color: $white;
+                &:hover,
+                &:active,
+                &.active {
+                    color: $blue_color !important;
+                    background-color: $white !important
+                }
+            }
+        }
+    }
+    
     .RightSection{
         display: flex;
         img{

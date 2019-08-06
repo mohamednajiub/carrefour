@@ -3,4 +3,21 @@
     display: flex;
     background-color: $blue_color;
     padding: 10px 0;
+    
+}
+.MainNav{
+    li{
+        a{
+            color: $blue_color;
+            &:hover,
+            &:active,
+            &.active {
+                color: $blue_color !important;
+                background-color: $white !important
+            }
+            svg{
+                color: $red
+            }
+        }
+    }
 }

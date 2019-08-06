@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import * as classes from './Information.module.scss';
 import {Data} from '../../../Data';
 import Select from 'react-select';
-import InformationNavigation from '../NavigationItems/NavigationItems';
-
+import NavigationItems from '../NavigationItems/NavigationItems';
+import {MdPlace, MdAccessTime, MdLocalPhone} from 'react-icons/md';
 class Information extends Component{
     state = {
         selectedOption: {
-            label: 'EUR',
-            value: 'eur'
+            label: 'EGP',
+            value: 'egp'
         },
         currencies: [
             {
@@ -24,6 +24,23 @@ class Information extends Component{
                 value: 'eur'
             }
         ],
+        linksItems:[
+            {
+                link: '/stores',
+                title: 'Stores',
+                icon: <MdPlace />
+            },
+            {
+                link: '/works-time',
+                title: 'Works Time',
+                icon: <MdAccessTime />
+            },
+            {
+                link: '/contact-us',
+                title: 'Contact us',
+                icon: <MdLocalPhone />
+            }
+        ]
     }
 
     handleChange = selectedOption => {
@@ -42,7 +59,7 @@ class Information extends Component{
                         className={classes.Select}
                     />
                 </div>
-                <InformationNavigation />
+                <NavigationItems linksItems={this.state.linksItems} className={classes.InformationNav} />
             </header>
         )
     }

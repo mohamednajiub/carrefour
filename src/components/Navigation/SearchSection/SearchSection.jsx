@@ -15,7 +15,7 @@ class SearchSection extends Component{
         selectedCategory: {
             label: 'All Categories',
             value: 'allCategories'
-        },
+        }
     }
 
     handleChange = (selectedCategory) => {
