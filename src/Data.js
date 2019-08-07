@@ -1,16 +1,16 @@
 export const Data = {
     paymentMethods: {
         name: 'Payment Methods',
-        source: '/images/paymentMethods.png',
+        source: './images/paymentMethods.png',
     },
     logos: {
         carrfour:{
             name: 'Carrfour',
-            source: '/images/carrfourLogo.png'
+            source: './images/carrfourLogo.png'
         },
         nasNav: {
             name: 'NasNav',
-            source: '/images/nasnavLogo.png'
+            source: './images/nasnavLogo.png'
         }
     }
 }
@@ -36,13 +36,13 @@ export const Categories = [
 
 export const CarouselData = [
     {
-        source: '/images/carousel/image(1).png',
+        source: './images/carousel/image(1).png',
         title: 'FAST FOOD ON CARREFOUR HERE NOW',
         details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed  do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
         link: '/link'
     },
     {
-        source: '/images/carousel/image(2).png',
+        source: './images/carousel/image(2).png',
         title: 'FAST FOOD ON CARREFOUR HERE NOW',
         details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed  do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
         link: '/link'
@@ -51,32 +51,32 @@ export const CarouselData = [
 
 export const CategoriesSlider = [
     {
-        source: '/images/slider/phone.png',
+        source: './images/slider/phone.png',
         title: 'Smart Phone',
         link: '/smart-phone'
     },
     {
-        source: '/images/slider/baby.png',
+        source: './images/slider/baby.png',
         title: 'Baby World',
         link: '/baby-world'
     },
     {
-        source: '/images/slider/healthfood.png',
+        source: './images/slider/healthfood.png',
         title: 'Healthe Food',
         link: '/health-food'
     },
     {
-        source: '/images/slider/tv.png',
+        source: './images/slider/tv.png',
         title: 'Smart TV\'S',
         link: '/smart-tvs'
     },
     {
-        source: '/images/slider/supermarket.png',
+        source: './images/slider/supermarket.png',
         title: 'Super Market',
         link: '/super-market'
     },
     {
-        source: '/images/slider/water.png',
+        source: './images/slider/water.png',
         title: 'Pepsi Water',
         link: '/pepsi-water'
     }
@@ -86,50 +86,50 @@ export const Branches = [
     {
         place: 'City Stars',
         link: '/city-stars',
-        source: '/images/branches/branch(1).png'
+        source: './images/branches/branch(1).png'
     },
     {
         place: 'City Stars',
         link: '/city-stars',
-        source: '/images/branches/branch(2).png'
+        source: './images/branches/branch(2).png'
     },
     {
         place: 'City Stars',
         link: '/city-stars',
-        source: '/images/branches/branch(3).png'
+        source: './images/branches/branch(3).png'
     },
     {
         place: 'City Stars',
         link: '/city-stars',
-        source: '/images/branches/branch(4).png'
+        source: './images/branches/branch(4).png'
     }
 ]
 
 export const HotDeals = [
     {
         productName: 'Pampers Premiun Core New',
-        source: '/images/hotDeals/hotdeal(1).png',
+        source: './images/hotDeals/hotdeal(1).png',
         price: '199$',
         sale: "50%",
         lastUpdate: '2019/01/01'
     },
     {
         productName: 'Pampers Premiun Core New',
-        source: '/images/hotDeals/hotdeal(2).png',
+        source: './images/hotDeals/hotdeal(2).png',
         price: '199$',
         sale: "50%",
         lastUpdate: '2019/01/01'
     },
     {
         productName: 'Pampers Premiun Core New',
-        source: '/images/hotDeals/hotdeal(3).png',
+        source: './images/hotDeals/hotdeal(3).png',
         price: '199$',
         sale: "50%",
         lastUpdate: '2019/01/01'
     },
     {
         productName: 'Pampers Premiun Core New',
-        source: '/images/hotDeals/hotdeal(4).png',
+        source: './images/hotDeals/hotdeal(4).png',
         price: '199$',
         sale: "50%",
         lastUpdate: '2019/01/01'
