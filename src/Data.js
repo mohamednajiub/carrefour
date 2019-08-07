@@ -81,3 +81,26 @@ export const CategoriesSlider = [
         link: '/pepsi-water'
     }
 ];
+
+export const Branches = [
+    {
+        place: 'City Stars',
+        link: '/city-stars',
+        source: '/images/branches/branch(1).png'
+    },
+    {
+        place: 'City Stars',
+        link: '/city-stars',
+        source: '/images/branches/branch(2).png'
+    },
+    {
+        place: 'City Stars',
+        link: '/city-stars',
+        source: '/images/branches/branch(3).png'
+    },
+    {
+        place: 'City Stars',
+        link: '/city-stars',
+        source: '/images/branches/branch(4).png'
+    }
+]

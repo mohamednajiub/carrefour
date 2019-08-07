@@ -4,6 +4,7 @@ import Layout from '../hoc/Layout/Layout';
 import Carousel from '../components/Carousel/Carousel'
 
 import Categories from '../components/Categories/Categories';
+import Branches from '../components/Branches/Branches';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Layout>
         <Carousel />
         <Categories />
+        <Branches />
       </Layout>
     </div>
   );

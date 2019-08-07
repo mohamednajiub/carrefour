@@ -3,7 +3,7 @@ import * as classes from './Titles.module.scss';
 
 const Titles = (props) =>{
   return (
-    <div className={classes.Titles}>
+    <div className={[props.className, classes.Titles].join(' ')}>
         <h3>{props.title}</h3>
         <h4>{props.subtitle}</h4>
     </div>
