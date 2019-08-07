@@ -6,6 +6,7 @@ import Carousel from '../components/Carousel/Carousel'
 import Categories from '../components/Categories/Categories';
 import Branches from '../components/Branches/Branches';
 import HotDeals from '../components/HotDeals/HotDeals';
+import ProductsCollections from '../components/ProductsCollections/ProductsCollections'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Categories />
         <Branches />
         <HotDeals />
+        <ProductsCollections />
       </Layout>
     </div>
   );

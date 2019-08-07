@@ -11,7 +11,7 @@ class Categories extends Component{
                     <Titles title="hot deals" subtitle="new hot deals now" />
                     <div className={classes.DealsContainer}>
                         {HotDeals.map((deal, index)=>{
-                            return <Product key={index} productName={deal.productName} source={deal.source} sale={deal.sale} lastUpdate={deal.lastUpdate} price={deal.price} />
+                            return <Product key={index} {...deal} />
                         })}
                     </div>
                 </div>

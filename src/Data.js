@@ -135,3 +135,21 @@ export const HotDeals = [
         lastUpdate: '2019/01/01'
     }
 ]
+
+export const ProductsCollections = [
+    {
+        title: 'Sports Products',
+        source: './images/productsCollections/sports.png',
+        link: '/sports-products',
+    },
+    {
+        title: 'Food Products',
+        source: './images/productsCollections/food.png',
+        link: '/food-products',
+    },
+    {
+        title: 'Smart Products',
+        source: './images/productsCollections/smart.png',
+        link: '/smart-products',
+    },
+]
