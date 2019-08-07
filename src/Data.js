@@ -104,3 +104,26 @@ export const Branches = [
         source: '/images/branches/branch(4).png'
     }
 ]
+
+export const HotDeals = [
+    {
+        place: 'City Stars',
+        link: '/city-stars',
+        source: '/images/hotDeals/hotdeal(1).png'
+    },
+    {
+        place: 'City Stars',
+        link: '/city-stars',
+        source: '/images/hotDeals/hotdeal(2).png'
+    },
+    {
+        place: 'City Stars',
+        link: '/city-stars',
+        source: '/images/hotDeals/hotdeal(3).png'
+    },
+    {
+        place: 'City Stars',
+        link: '/city-stars',
+        source: '/images/hotDeals/hotdeal(4).png'
+    }
+]
