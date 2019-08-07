@@ -107,23 +107,31 @@ export const Branches = [
 
 export const HotDeals = [
     {
-        place: 'City Stars',
-        link: '/city-stars',
-        source: '/images/hotDeals/hotdeal(1).png'
+        productName: 'Pampers Premiun Core New',
+        source: '/images/hotDeals/hotdeal(1).png',
+        price: '199$',
+        sale: "50%",
+        lastUpdate: '2019/01/01'
     },
     {
-        place: 'City Stars',
-        link: '/city-stars',
-        source: '/images/hotDeals/hotdeal(2).png'
+        productName: 'Pampers Premiun Core New',
+        source: '/images/hotDeals/hotdeal(2).png',
+        price: '199$',
+        sale: "50%",
+        lastUpdate: '2019/01/01'
     },
     {
-        place: 'City Stars',
-        link: '/city-stars',
-        source: '/images/hotDeals/hotdeal(3).png'
+        productName: 'Pampers Premiun Core New',
+        source: '/images/hotDeals/hotdeal(3).png',
+        price: '199$',
+        sale: "50%",
+        lastUpdate: '2019/01/01'
     },
     {
-        place: 'City Stars',
-        link: '/city-stars',
-        source: '/images/hotDeals/hotdeal(4).png'
+        productName: 'Pampers Premiun Core New',
+        source: '/images/hotDeals/hotdeal(4).png',
+        price: '199$',
+        sale: "50%",
+        lastUpdate: '2019/01/01'
     }
 ]

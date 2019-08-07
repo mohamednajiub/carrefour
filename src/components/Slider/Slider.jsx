@@ -4,8 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import * as classes from "./Slider.module.scss";
 import {CategoriesSlider} from '../../Data';
-import {FaAngleRight} from 'react-icons/fa'
-import LinkButton  from '../UI/LinkButton/LinkButton'
 
 class SliderComponent extends Component {
   render() {
