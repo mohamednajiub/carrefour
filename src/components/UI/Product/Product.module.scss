@@ -64,11 +64,10 @@
                 }
             }
         }
-        time{
-            background-color: $lite_gray;
-            color: $gray;
-            padding: 5px 20px
-        }
     }
-    
+    time{
+        background-color: $lite_gray;
+        color: $gray;
+        padding: 10px 30px
+    }
 }
