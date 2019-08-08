@@ -5,7 +5,7 @@ import LinkButton from '../LinkButton/LinkButton';
 
 const linkButton = (props) => {
     return (
-        <div className={classes.Label}>
+        <div className={[classes.Label, props.className].join(' ')}>
             <LinkButton className={classes.Icon}>
                 {props.icon}
             </LinkButton>

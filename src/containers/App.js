@@ -9,6 +9,7 @@ import HotDeals from '../components/HotDeals/HotDeals';
 import ProductsCollections from '../components/ProductsCollections/ProductsCollections';
 import Isotope from '../components/Isotope/Isotope';
 import * as Data from '../Data'
+import Footer from '../components/Footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Isotope componentTitle="hot deals" componentSubtitle="new hot deals now" Data={Data.HotDeals}/>
         <ProductsCollections />
         <Isotope componentTitle="our products" componentSubtitle="Browse our fascinating sections!" Data={Data.HotDeals}/>
+        <Footer />
       </Layout>
     </div>
   );

@@ -1,0 +1,62 @@
+@import '../../assets/scss/color_variables';
+@import '../../assets/scss/Input.module.scss';
+.Footer{
+    .FooterMainSection{
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0;
+        .FooterLinks{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            .Column{
+                display: flex;
+                flex-direction: column;
+                width: calc(100%/3);
+                a{
+                    color: $gray;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    margin: 7px 0;
+                }
+            }
+        }
+        .Store{
+            width: calc(100%/3);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            align-content: center;
+            padding: 20px;
+            background-color: $lite_gray;
+            .Icon{
+                a{
+                    background-color: transparent !important;
+                    margin: 0;
+                    svg{
+                        color: $blue_color  !important;
+                    }
+                }
+            }
+            .Button{
+                background-color: $blue_color;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+        .Subscribtion{
+            @extend .Store;
+            .SubscribeIcon{
+                a{
+                    background-color: transparent !important;
+                    margin: 0;
+                    svg{
+                        color: $red  !important;
+                    }
+                }
+            }
+
+        }
+    }
+}
