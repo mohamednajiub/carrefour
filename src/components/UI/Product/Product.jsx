@@ -8,7 +8,7 @@ const product = (props) => {
         quentety: 0,
     };
     return(
-        <section className={classes.Product}>
+        <section className={[classes.Product, props.className].join(' ')}>
             {
                 props.sale?
                     <div className={classes.Sale}>
