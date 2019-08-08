@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0ca22ab1fd4cc072e95c1e0ec5f267a0",
+    "revision": "4e521d1294578b06f3030c56dd195c1d",
     "url": "/carrefour/index.html"
   },
   {
-    "revision": "3b12f46540d94781119f",
+    "revision": "e163d4c6c4e6982f429d",
     "url": "/carrefour/static/css/2.87c40933.chunk.css"
   },
   {
-    "revision": "c62db3ffcaee702b4667",
-    "url": "/carrefour/static/css/main.328ef8c3.chunk.css"
+    "revision": "60166acf29213c6b1cc3",
+    "url": "/carrefour/static/css/main.1b34eef3.chunk.css"
   },
   {
-    "revision": "3b12f46540d94781119f",
-    "url": "/carrefour/static/js/2.fc346491.chunk.js"
+    "revision": "e163d4c6c4e6982f429d",
+    "url": "/carrefour/static/js/2.de3a1b27.chunk.js"
   },
   {
-    "revision": "c62db3ffcaee702b4667",
-    "url": "/carrefour/static/js/main.1db3bb0c.chunk.js"
+    "revision": "60166acf29213c6b1cc3",
+    "url": "/carrefour/static/js/main.96a78a84.chunk.js"
   },
   {
     "revision": "27c1c48160f6cc27ca80",
