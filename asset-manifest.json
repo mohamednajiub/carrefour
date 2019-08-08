@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/carrefour/static/css/main.0c084e9f.chunk.css",
-    "main.js": "/carrefour/static/js/main.e0926885.chunk.js",
-    "main.js.map": "/carrefour/static/js/main.e0926885.chunk.js.map",
+    "main.css": "/carrefour/static/css/main.80c08547.chunk.css",
+    "main.js": "/carrefour/static/js/main.f6f1ba29.chunk.js",
+    "main.js.map": "/carrefour/static/js/main.f6f1ba29.chunk.js.map",
     "runtime~main.js": "/carrefour/static/js/runtime~main.b544e2d8.js",
     "runtime~main.js.map": "/carrefour/static/js/runtime~main.b544e2d8.js.map",
     "static/css/2.87c40933.chunk.css": "/carrefour/static/css/2.87c40933.chunk.css",
-    "static/js/2.320bfc66.chunk.js": "/carrefour/static/js/2.320bfc66.chunk.js",
-    "static/js/2.320bfc66.chunk.js.map": "/carrefour/static/js/2.320bfc66.chunk.js.map",
+    "static/js/2.2712bdd7.chunk.js": "/carrefour/static/js/2.2712bdd7.chunk.js",
+    "static/js/2.2712bdd7.chunk.js.map": "/carrefour/static/js/2.2712bdd7.chunk.js.map",
     "index.html": "/carrefour/index.html",
-    "precache-manifest.a5593714c40a79c41494c297ddc35d64.js": "/carrefour/precache-manifest.a5593714c40a79c41494c297ddc35d64.js",
+    "precache-manifest.96881a99c31e4cb8fce3897db4ceb426.js": "/carrefour/precache-manifest.96881a99c31e4cb8fce3897db4ceb426.js",
     "service-worker.js": "/carrefour/service-worker.js",
     "static/css/2.87c40933.chunk.css.map": "/carrefour/static/css/2.87c40933.chunk.css.map",
-    "static/css/main.0c084e9f.chunk.css.map": "/carrefour/static/css/main.0c084e9f.chunk.css.map",
+    "static/css/main.80c08547.chunk.css.map": "/carrefour/static/css/main.80c08547.chunk.css.map",
     "static/media/slick-theme.css": "/carrefour/static/media/slick.f97e3bbf.svg"
   }
 }
