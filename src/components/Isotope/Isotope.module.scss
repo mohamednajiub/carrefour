@@ -1,21 +1,29 @@
-.InfoContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.FilterLinks{
-    display: flex;
-    list-style-type: none;
-    li{
-        margin-right: 20px;
-        text-align: right;
-        &:hover,
-        &:active,
-        &.active{
-            color: blue !important
+.IsotopeContainer{
+    padding: 50px 0;
+    .InfoContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 0;
+    }
+    .FilterLinks{
+        display: flex;
+        list-style-type: none;
+        li{
+            margin-right: 20px;
+            text-align: right;
+            &:hover,
+            &:active,
+            &.active{
+                color: blue !important
+            }
         }
     }
+    .ItemsContainer{
+        display: flex;
+    }
 }
-.ItemsContainer{
-    display: flex;
+
+.gutter-sizer{
+    width: 5px
 }

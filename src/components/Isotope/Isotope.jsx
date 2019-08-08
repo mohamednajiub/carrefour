@@ -28,36 +28,37 @@ class FilterGrid extends Component {
         const Data = this.props.Data
 
         return(
-            // Filter Buttons
-            <section className="container">
-                <header className={classes.InfoContainer}>
-                    <Titles title="hot deals" subtitle="Now hot deals now"/>
-                    <div className="button-group filter-button-group grid-filters">
-                        <div className="tabs is-centered is-toggle">
-                            <ul className={classes.FilterLinks} id="portfolio-filters">
-                                <li data-filter="*" onClick={() => {this.onFilterChange("*")}}>All</li>
-                                {
-                                    Data.map((item, index)=>{
-                                        return <li key={index} data-filter={item.category.slug} onClick={(event) => {this.onFilterChange(item.category.slug, event)}}>{item.category.title}</li>
-                                    })
-                                }
-                            </ul>
+            <section className={classes.IsotopeContainer}>
+                <div className="container">
+                    <header className={classes.InfoContainer}>
+                        <Titles title={this.props.componentTitle} subtitle={this.props.componentSubtitle}/>
+                        <div className="button-group filter-button-group grid-filters">
+                            <div className="tabs is-centered is-toggle">
+                                <ul className={classes.FilterLinks} id="portfolio-filters">
+                                    <li data-filter="*" onClick={() => {this.onFilterChange("*")}}>All</li>
+                                    {
+                                        Data.map((item, index)=>{
+                                            return <li key={index} data-filter={item.category.slug} onClick={(event) => {this.onFilterChange(item.category.slug, event)}}>{item.category.title}</li>
+                                        })
+                                    }
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </header>
+                    </header>
 
-                <div className={`grid ${classes.ItemsContainer}`} id="grid-container">
-                    <div className="grid-sizer"></div>
-                    <div className="gutter-sizer"></div>
-                    {
-                        Data?
-                            Data.length>0?
-                                Data.map((item,index) => (
-                                    <Product key={index} className={`grid-item ${item.category.slug}`} {...item}/>
-                                ))
+                    <div className={`grid ${classes.ItemsContainer}`} id="grid-container">
+                        <div className="grid-sizer"></div>
+                        <div className="gutter-sizer"></div>
+                        {
+                            Data?
+                                Data.length>0?
+                                    Data.map((item,index) => (
+                                        <Product key={index} className={`grid-item ${item.category.slug}`} {...item}/>
+                                    ))
+                                :null
                             :null
-                        :null
-                    }
+                        }
+                    </div>
                 </div>
             </section>
         )
