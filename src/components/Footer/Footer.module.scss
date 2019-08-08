@@ -81,4 +81,16 @@
 
         }
     }
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0;
+        &>div{
+            display: flex;
+            p{
+                margin-right: 20px
+            }
+        }
+    }
 }

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import * as classes from './Footer.module.scss';
-import CarrefourLogo from '../Logos/Logo';
+import Logo from '../Logos/Logo';
 import {Data} from '../../Data';
 import {Link} from 'react-router-dom';
 import Label from '../UI/Label/Label';
@@ -19,7 +19,7 @@ class Footer extends Component {
             <footer className={classes.Footer}>
                 <div className="container">
                     <header>
-                        <CarrefourLogo source={Data.logos.carrfour.source} name={Data.logos.carrfour.name}/>
+                        <Logo source={Data.logos.carrfour.source} name={Data.logos.carrfour.name}/>
                     </header>
                     <section className={classes.FooterMainSection}>
                         <div className={classes.FooterLinks}>
@@ -61,7 +61,12 @@ class Footer extends Component {
                         </div>
                     </section>
                     <footer>
-                        <CarrefourLogo source={Data.logos.nasNav.source} name={Data.logos.nasNav.name}/>
+                        <p>&copy; Careefour Store .Inc</p>
+                        <img src={Data.paymentMethods.source} alt={Data.paymentMethods.name}/>
+                        <div>
+                            <p>Powerd by</p>
+                            <Logo source={Data.logos.nasNav.source} name={Data.logos.nasNav.name}/>
+                        </div>
                     </footer>
                 </div>
             </footer>
