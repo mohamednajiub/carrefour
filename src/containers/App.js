@@ -21,7 +21,7 @@ function App() {
         <Isotope componentTitle="hot deals" componentSubtitle="new hot deals now" Data={Data.HotDeals}/>
         <ProductsCollections />
         <Isotope componentTitle="our products" componentSubtitle="Browse our fascinating sections!" Data={Data.HotDeals}/>
-        <Footer />
+
       </Layout>
     </div>
   );
