@@ -21,7 +21,7 @@ class Toolbar extends Component{
                             <Link to='/cart' className={classes.LinkIcon}><MdShoppingCart /></Link>
                         </div>
                         <div className="DesktopOnly">
-                            <Information />
+                            <Information infoNavigation={this.props.infoNavigation}/>
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ class Toolbar extends Component{
                     <SearchSection />
                 </div>
                 <div className="container">
-                    <NavigationItems linksItems={this.props.linksItems} className={classes.MainNav} />
+                    <NavigationItems linksItems={this.props.mainNavigation} className={classes.MainNav} />
                 </div>
             </header>
         )

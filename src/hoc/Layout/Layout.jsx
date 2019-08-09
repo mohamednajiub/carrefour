@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
-import * as classes from './Layout.module.scss';
+import './Layout.module.scss';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import Footer from '../../components/Footer/Footer';
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
 import {FaGrin, FaPizzaSlice, FaTshirt, FaBaseballBall, FaBriefcaseMedical, FaStar, FaMobileAlt, FaShoppingBasket} from 'react-icons/fa';
+import {MdPlace, MdAccessTime, MdLocalPhone} from 'react-icons/md';
 class Layout extends Component {
     state={
         showSideDrawer: false,
-        linksItems:[
+        mainNavigation: [
             {
                 link: '/smart-phone',
                 title: 'Smart Phone',
@@ -48,6 +49,23 @@ class Layout extends Component {
                 title: 'Food',
                 icon: <FaPizzaSlice />
             },
+        ],
+        infoNavigation:[
+            {
+                link: '/stores',
+                title: 'Stores',
+                icon: <MdPlace />
+            },
+            {
+                link: '/works-time',
+                title: 'Works Time',
+                icon: <MdAccessTime />
+            },
+            {
+                link: '/contact-us',
+                title: 'Contact us',
+                icon: <MdLocalPhone />
+            }
         ]
     }
     sideDrawerClosedHandler = () =>{
@@ -65,11 +83,11 @@ class Layout extends Component {
 
         return(
             <>
-                <Toolbar linksItems={this.state.linksItems} drawerToggleClicked={this.sideDrawerToggleHandler}/>
+                <Toolbar infoNavigation={this.state.infoNavigation} mainNavigation={this.state.mainNavigation} drawerToggleClicked={this.sideDrawerToggleHandler}/>
                 <SideDrawer 
                     open={this.state.showSideDrawer}
                     closed={this.sideDrawerClosedHandler}
-                    linksItems={this.state.linksItems}
+                    infoNavigation={this.state.infoNavigation}
                 />
                 <main>
                     {this.props.children}

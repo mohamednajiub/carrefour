@@ -14,6 +14,20 @@ export const Data = {
         }
     }
 }
+export const currencies = [
+    {
+        label: 'EGP',
+        value: 'egp'
+    },
+    {
+        label: 'USD',
+        value: 'usd'
+    },
+    {
+        label: 'EUR',
+        value: 'eur'
+    }
+]
 
 export const Categories = [
     {
