@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Layout.module.scss';
+import * as classes from './Layout.module.scss';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import Footer from '../../components/Footer/Footer';
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';

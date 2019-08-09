@@ -1,5 +1,6 @@
-@import-normalize;
 
+@import-normalize;
+@import './assets/scss/screen_sizes';
 *,*::after, *::before{
   box-sizing: border-box;
   margin: 0;
@@ -22,4 +23,18 @@ code {
   max-width: 1200px;
   margin: auto;
   padding: 0 20px;
+}
+
+@media (max-width: 499px){
+  .DesktopOnly{
+    display: none;
+  }
+}
+.MobileOnly{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media screen and (min-width: $small_tablet_max_width){
+    display: none ;
+  }
 }

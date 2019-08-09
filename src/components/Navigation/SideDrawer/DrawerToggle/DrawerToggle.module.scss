@@ -1,3 +1,4 @@
+@import '../../../../assets/scss/color_variables';
 .DrawerToggle {
     width: 40px;
     height: 100%;
@@ -9,14 +10,9 @@
     box-sizing: border-box;
     cursor: pointer;
     &>div {
-        width: 90%;
+        width: 70%;
         height: 3px;
-        background-color: white;
-    }
-}
-
-@media (min-width: 500px) {
-    .DrawerToggle {
-        display: none;
+        background-color: $blue_color;
+        margin: 3px 0;
     }
 }
