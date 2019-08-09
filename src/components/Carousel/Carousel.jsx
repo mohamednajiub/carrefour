@@ -20,7 +20,7 @@ class Carousel extends Component {
         accessibility: false,
         arrows: false,
         pauseOnHover: true,
-        dotsClass: ['slick-dots', classes.Dots].join(' ')
+        dotsClass: ['slick-dots', classes.Dots].join(' '),
     };
     return (
         <Slider {...settings} className={classes.Slider}>

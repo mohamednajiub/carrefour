@@ -38,3 +38,10 @@ code {
     display: none ;
   }
 }
+.slick-active{
+  button{
+    &::before{
+      background-color: #f62434 !important;
+    }
+  }
+}
