@@ -15,9 +15,32 @@ class SliderComponent extends Component {
         autoplay: true,
         autoplaySpeed: 5000,
         slidesToScroll: 1,
-        accessibility: false,
-        arrows: false,
-        pauseOnHover: true
+        accessibility: true,
+        arrows: true,
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 594,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 990,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     };
     return (
         <div className={classes.Slider}>
