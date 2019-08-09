@@ -37,7 +37,7 @@ class Carousel extends Component {
                                     <p>{carouselItem.details}</p>
                                     {
                                         carouselItem.link?
-                                            <LinkButton Link={carouselItem.link} className={classes.SliderLink}><FaAngleRight /></LinkButton>
+                                            <LinkButton link={carouselItem.link} className={classes.SliderLink}><FaAngleRight /></LinkButton>
                                         :null
                                     }
                                 </div>:null

@@ -7,7 +7,7 @@ const product = (props) => {
             <img src={props.source} alt={props.title} />
             <div className={classes.Overlay}>
                 <h4>{props.title}</h4>
-                <Link to={props.Link}>Shop Now</Link>
+                <Link to={props.link}>Shop Now</Link>
             </div>
         </section>
     )

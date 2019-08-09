@@ -7,8 +7,8 @@ const productCollections = (props) => {
         <div className="container">
             <section className={classes.ProductsCollections}>
                 {
-                    ProductsCollections.map(product=>{
-                        return <ProductCollection {...product} />
+                    ProductsCollections.map((product, index)=>{
+                        return <ProductCollection key={index} {...product} />
                     })
                 }
             </section>

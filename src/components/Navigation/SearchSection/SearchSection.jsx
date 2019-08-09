@@ -64,11 +64,11 @@ class SearchSection extends Component{
                     />
                 </div>
                 <div className={classes.ButtonsSection}>
-                    <LinkButton Link='/cart'>
+                    <LinkButton link='/cart'>
                         <MdShoppingCart />
                     </LinkButton>
                     <Notifications numberOfNotifications={5} className={classes.Notifications}/>
-                    <LinkButton Link='/login' className={classes.Login}>
+                    <LinkButton link='/login' className={classes.Login}>
                         <FaUserPlus />
                         Login
                     </LinkButton>

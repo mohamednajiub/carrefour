@@ -10,22 +10,26 @@ class Categories extends Component{
             {
                 icon: <FaBicycle />,
                 title: 'free shipping',
-                subtitle: 'while not exectly line'
+                subtitle: 'while not exectly line',
+                link: 'free-shipping'
             },
             {
                 icon: <FaBicycle />,
                 title: 'free shipping',
-                subtitle: 'while not exectly line'
+                subtitle: 'while not exectly line',
+                link: 'free-shipping'
             },
             {
                 icon: <FaBicycle />,
                 title: 'free shipping',
-                subtitle: 'while not exectly line'
+                subtitle: 'while not exectly line',
+                link: 'free-shipping'
             },
             {
                 icon: <FaBicycle />,
                 title: 'free shipping',
-                subtitle: 'while not exectly line'
+                subtitle: 'while not exectly line',
+                link: 'free-shipping'
             }
         ]
     }
@@ -36,8 +40,8 @@ class Categories extends Component{
                     <Titles title="shopping by category" subtitle="online shopping for everything" />
                     <SliderComponent />
                     <div className={classes.IconCategories}>
-                        {this.state.categories.map(category=>{
-                            return <Label icon={category.icon} title={category.title} subtitle={category.subtitle}/>
+                        {this.state.categories.map((category, index)=>{
+                            return <Label key={index} {...category}/>
                         })}
                     </div>
                 </div>

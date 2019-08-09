@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 const linkButton = (props) => {
     return (
-        <Link to={props.Link} className={[props.className, classes.Button].join(' ')}>
+        <Link to={props.link} className={[props.className, classes.Button].join(' ')}>
             {props.children}
         </Link>
     )

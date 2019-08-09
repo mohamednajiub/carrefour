@@ -40,11 +40,11 @@ class Footer extends Component {
                             </div>
                         </div>
                         <div className={classes.Store}>
-                            <Label className={classes.Icon} title='Find a carrefour store' icon={<FaMapMarkerAlt />}/>
-                            <LinkButton className={classes.Button} Link='branches'>Find Store</LinkButton>
+                            <Label link="#" className={classes.Icon} title='Find a carrefour store' icon={<FaMapMarkerAlt />}/>
+                            <LinkButton link="/branches" className={classes.Button}>Find Store</LinkButton>
                         </div>
                         <div className={classes.Subscribtion}>
-                            <Label className={classes.SubscribeIcon} title='Subscribe to carrefour' icon={<MdMail />}/>
+                            <Label link="#" className={classes.SubscribeIcon} title='Subscribe to carrefour' icon={<MdMail />}/>
                             <Formik
                                 enableReinitialize={true}
                                 initialValues={initialValues}
