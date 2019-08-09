@@ -1,41 +1,45 @@
 @import '../../assets/scss/color_variables';
 .Slider {
-    width: 100%;
     margin: 20px 0;
-    .slick-list{
-        height: 100% !important;
-        img {
-            height: 450px !important;
-            margin: auto;
-            width: 100% !important;
-        }
-    }
-}
-.Slide{
-    position: relative;
-    display: flex !important;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-    text-align: center;
-    align-items: center;
-    .ImageContainer{
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background-color: $lite_gray;
-        overflow: hidden;
+    .Slide{
         position: relative;
-        img{
-            width: max-content;
-            height: max-content;
-            position: absolute;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%)
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        text-align: center;
+        align-items: center;
+        .ImageContainer{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: $lite_gray;
+            overflow: hidden;
+            position: relative;
+            img{
+                width: max-content;
+                height: max-content;
+                position: absolute;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%)
+            }
+        }
+        h3{
+            margin: 20px 0
         }
     }
-    h3{
-        margin: 20px 0
+    button{
+        z-index: 99;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        &::before{
+            color: $gray;
+            opacity: 1;
+            font-size: 50px;
+            border-radius: 50%;
+        }
     }
 }
