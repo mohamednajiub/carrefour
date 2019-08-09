@@ -23,8 +23,7 @@ class Carousel extends Component {
         dotsClass: ['slick-dots', classes.Dots].join(' ')
     };
     return (
-      <div className={classes.Slider}>
-        <Slider {...settings}>
+        <Slider {...settings} className={classes.Slider}>
             {
                 CarouselData.map((carouselItem, index)=>{
                     return (
@@ -42,13 +41,11 @@ class Carousel extends Component {
                                     }
                                 </div>:null
                             }
-                            
                         </div>
                     )
                 })
             }
         </Slider>
-      </div>
     );
   }
 }
