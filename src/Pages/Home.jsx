@@ -14,7 +14,7 @@ const home = () => {
         <Branches />
         <Isotope componentTitle="hot deals" componentSubtitle="new hot deals now" Data={Data.HotDeals}/>
         <ProductsCollections />
-        <Isotope componentTitle="our products" componentSubtitle="Browse our fascinating sections!" Data={Data.HotDeals}/>
+        <Isotope style={{backgroundColor: '#f6f8f9', marginTop: '50px', paddingTop: '20px'}} componentTitle="our products" componentSubtitle="Browse our fascinating sections!" Data={Data.HotDeals}/>
     </div>
   );
 }

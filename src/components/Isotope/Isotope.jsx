@@ -25,7 +25,7 @@ class FilterGrid extends Component {
         const Data = this.props.Data
 
         return(
-            <section className={classes.IsotopeContainer}>
+            <section className={classes.IsotopeContainer} style={this.props.style}>
                 <div className="container">
                     <header className={classes.InfoContainer}>
                         <Titles title={this.props.componentTitle} subtitle={this.props.componentSubtitle}/>
