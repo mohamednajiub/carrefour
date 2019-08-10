@@ -29,18 +29,14 @@ class FilterGrid extends Component {
                 <div className="container">
                     <header className={classes.InfoContainer}>
                         <Titles title={this.props.componentTitle} subtitle={this.props.componentSubtitle}/>
-                        <div className="button-group filter-button-group grid-filters">
-                            <div>
-                                <ul className={classes.FilterLinks}>
-                                    <li className={classes.Active} data-filter="*" onClick={() => {this.onFilterChange("*")}}>All</li>
-                                    {
-                                        Data.map((item, index)=>{
-                                            return <li key={index} data-filter={item.category.slug} onClick={(event) => {this.onFilterChange(item.category.slug, event)}}>{item.category.title}</li>
-                                        })
-                                    }
-                                </ul>
-                            </div>
-                        </div>
+                        <ul className={classes.FilterLinks}>
+                            <li className={classes.Active} data-filter="*" onClick={() => {this.onFilterChange("*")}}>All</li>
+                            {
+                                Data.map((item, index)=>{
+                                    return <li key={index} data-filter={item.category.slug} onClick={(event) => {this.onFilterChange(item.category.slug, event)}}>{item.category.title}</li>
+                                })
+                            }
+                        </ul>
                     </header>
 
                     <div className={`isotope ${classes.ItemsContainer}`} id="grid-container">

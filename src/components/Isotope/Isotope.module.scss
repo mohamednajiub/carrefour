@@ -8,17 +8,17 @@
         justify-content: space-between;
         align-items: center;
         margin: 30px 0;
-        @media screen and (max-width: $large_tablet_max_width){
-            flex-direction: column;
-        }
+        flex-wrap: wrap;
         .FilterLinks{
             display: flex;
             list-style-type: none;
             cursor: pointer;
+            overflow-y: auto;
             li{
                 padding: 10px;
                 text-align: right;
                 transition: all 0.5s ease;
+                white-space: nowrap;
                 &:hover,
                 &:active,
                 &.Active{

@@ -50,4 +50,7 @@ code {
   @media screen and (max-width: $small_tablet_max_width){
     width: 100%;
   }
+  @media screen and (min-width: $large_tablet_min_width) and (max-width: $large_tablet_max_width){
+    width: calc(100%/3.3);
+  }
 }
