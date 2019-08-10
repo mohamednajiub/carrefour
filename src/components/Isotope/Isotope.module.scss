@@ -1,4 +1,5 @@
 @import '../../assets/scss/color_variables';
+@import '../../assets/scss/screen_sizes';
 .IsotopeContainer{
     width: 100%;
     padding: 50px 0;
@@ -7,22 +8,26 @@
         justify-content: space-between;
         align-items: center;
         margin: 30px 0;
-    }
-    .FilterLinks{
-        display: flex;
-        list-style-type: none;
-        cursor: pointer;
-        li{
-            padding: 10px;
-            text-align: right;
-            transition: all 0.5s ease;
-            &:hover,
-            &:active,
-            &.Active{
-                color: $blue_color !important
+        @media screen and (max-width: $large_tablet_max_width){
+            flex-direction: column;
+        }
+        .FilterLinks{
+            display: flex;
+            list-style-type: none;
+            cursor: pointer;
+            li{
+                padding: 10px;
+                text-align: right;
+                transition: all 0.5s ease;
+                &:hover,
+                &:active,
+                &.Active{
+                    color: $blue_color !important
+                }
             }
         }
     }
+    
     .ItemsContainer{
         display: flex;
         flex-wrap: wrap;

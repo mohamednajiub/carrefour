@@ -30,7 +30,7 @@ class FilterGrid extends Component {
                     <header className={classes.InfoContainer}>
                         <Titles title={this.props.componentTitle} subtitle={this.props.componentSubtitle}/>
                         <div className="button-group filter-button-group grid-filters">
-                            <div className="tabs is-centered is-toggle">
+                            <div>
                                 <ul className={classes.FilterLinks}>
                                     <li className={classes.Active} data-filter="*" onClick={() => {this.onFilterChange("*")}}>All</li>
                                     {

@@ -47,4 +47,7 @@ code {
 }
 .grid-item{
   width: 23%;
+  @media screen and (max-width: $small_tablet_max_width){
+    width: 100%;
+  }
 }
