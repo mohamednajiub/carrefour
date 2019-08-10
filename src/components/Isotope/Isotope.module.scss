@@ -1,4 +1,6 @@
+@import '../../assets/scss/color_variables';
 .IsotopeContainer{
+    width: 100%;
     padding: 50px 0;
     .InfoContainer{
         display: flex;
@@ -9,13 +11,15 @@
     .FilterLinks{
         display: flex;
         list-style-type: none;
+        cursor: pointer;
         li{
-            margin-right: 20px;
+            padding: 10px;
             text-align: right;
+            transition: all 0.5s ease;
             &:hover,
             &:active,
-            &.active{
-                color: blue !important
+            &.Active{
+                color: $blue_color !important
             }
         }
     }
@@ -24,6 +28,3 @@
     }
 }
 
-.gutter-sizer{
-    width: 5px
-}
