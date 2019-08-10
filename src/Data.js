@@ -144,6 +144,28 @@ export const HotDeals = [
     },
     {
         productName: 'Pampers Premiun Core New',
+        source: './images/hotDeals/hotdeal(2).png',
+        price: '199$',
+        sale: "50%",
+        lastUpdate: '2019/01/01',
+        category: {
+            slug: 'home',
+            title: 'Home'
+        }
+    },
+    {
+        productName: 'Pampers Premiun Core New',
+        source: './images/hotDeals/hotdeal(2).png',
+        price: '199$',
+        sale: "50%",
+        lastUpdate: '2019/01/01',
+        category: {
+            slug: 'home',
+            title: 'Home'
+        }
+    },
+    {
+        productName: 'Pampers Premiun Core New',
         source: './images/hotDeals/hotdeal(3).png',
         price: '199$',
         sale: "50%",
