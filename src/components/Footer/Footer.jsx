@@ -8,7 +8,8 @@ import {FaMapMarkerAlt} from 'react-icons/fa';
 import {MdMail} from 'react-icons/md'
 import LinkButton from '../UI/LinkButton/LinkButton';
 import {Formik, Form, Field, ErrorMessage} from 'formik';
-import Button from '../UI/Button/Button'
+import Button from '../UI/Button/Button';
+import {footerLinks} from '../../Data';
 class Footer extends Component {
 
     render() {
@@ -23,7 +24,7 @@ class Footer extends Component {
                     </header>
                     <section className={classes.FooterMainSection}>
                         <div className={classes.FooterLinks}>
-                            <div className={classes.Column}>
+                            {/* <div className={classes.Column}>
                                 <Link to="smart-phone">Smart Phone</Link>
                                 <Link to="super-market">Super Market</Link>
                                 <Link to="babys">Babys</Link>
@@ -37,7 +38,19 @@ class Footer extends Component {
                                 <Link to="baby-world">Baby World</Link>
                                 <Link to="clothes">Clothes</Link>
                                 <Link to="food">Food</Link>
-                            </div>
+                            </div> */}
+                            {/* <Link to="smart-phone">Smart Phone</Link>
+                            <Link to="super-market">Super Market</Link>
+                            <Link to="babys">Babys</Link>
+                            <Link to="smart-phone">Smart Phone</Link>
+                            <Link to="super-market">Super Market</Link>
+                            <Link to="babys">Babys</Link>
+                            <Link to="smart-phone">Smart Phone</Link>
+                            <Link to="super-market">Super Market</Link>
+                            <Link to="babys">Babys</Link> */}
+                            {footerLinks.map((link,index)=>{
+                                return <Link key={index} to={link.slug}>{link.title}</Link>
+                            })}
                         </div>
                         <div className={classes.Store}>
                             <Label link="#" className={classes.Icon} title='Find a carrefour store' icon={<FaMapMarkerAlt />}/>

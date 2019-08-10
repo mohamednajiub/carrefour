@@ -205,3 +205,42 @@ export const ProductsCollections = [
         link: '/smart-products',
     },
 ]
+
+export const footerLinks = [
+    {
+        slug: 'smart-phone',
+        title: 'Smart Phone'
+    },
+    {
+        slug: 'super-market',
+        title: 'Super Market'
+    },
+    {
+        slug: 'babys',
+        title: 'Babys'
+    },
+    {
+        slug: 'girls',
+        title: 'Girls'
+    },
+    {
+        slug: 'health-care',
+        title: 'Health Care'
+    },
+    {
+        slug: 'baby-world',
+        title: 'Baby World'
+    },
+    {
+        slug: 'clothes',
+        title: 'Clothes'
+    },
+    {
+        slug: 'food',
+        title: 'Food'
+    },
+    {
+        slug: 'baby-world',
+        title: 'Baby World'
+    }
+]
