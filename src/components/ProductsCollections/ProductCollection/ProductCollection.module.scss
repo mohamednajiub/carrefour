@@ -1,12 +1,22 @@
 @import '../../../assets/scss/color_variables';
+@import '../../../assets/scss/screen_sizes';
 .ProductCollection{
     display: flex;
-    width: calc(100%/3);
+    width: calc(100%/3.2);
     justify-content: space-between;
     position: relative;
     margin: 0 10px 10px ;
     height: 450px;
     overflow: hidden;
+    @media screen and (max-width: $small_tablet_max_width){
+        width: 100%;
+        margin: 10px 0;
+        height: 300px;
+    }
+    @media screen and (min-width: $large_tablet_min_width) and (max-width: $large_tablet_max_width){
+        width: calc(100%/2.1);
+        margin: 10px 8px;
+    }
     img{
         display: flex;
         height: 100%;
