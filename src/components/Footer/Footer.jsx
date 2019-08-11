@@ -24,30 +24,6 @@ class Footer extends Component {
                     </header>
                     <section className={classes.FooterMainSection}>
                         <div className={classes.FooterLinks}>
-                            {/* <div className={classes.Column}>
-                                <Link to="smart-phone">Smart Phone</Link>
-                                <Link to="super-market">Super Market</Link>
-                                <Link to="babys">Babys</Link>
-                            </div>
-                            <div className={classes.Column}>
-                                <Link to="girls">Girls</Link>
-                                <Link to="health-care">Health Care</Link>
-                                <Link to="baby-world">Baby World</Link>
-                            </div>
-                            <div className={classes.Column}>
-                                <Link to="baby-world">Baby World</Link>
-                                <Link to="clothes">Clothes</Link>
-                                <Link to="food">Food</Link>
-                            </div> */}
-                            {/* <Link to="smart-phone">Smart Phone</Link>
-                            <Link to="super-market">Super Market</Link>
-                            <Link to="babys">Babys</Link>
-                            <Link to="smart-phone">Smart Phone</Link>
-                            <Link to="super-market">Super Market</Link>
-                            <Link to="babys">Babys</Link>
-                            <Link to="smart-phone">Smart Phone</Link>
-                            <Link to="super-market">Super Market</Link>
-                            <Link to="babys">Babys</Link> */}
                             {footerLinks.map((link,index)=>{
                                 return <Link key={index} to={link.slug}>{link.title}</Link>
                             })}
