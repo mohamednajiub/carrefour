@@ -32,8 +32,8 @@ class FilterGrid extends Component {
                         <ul className={classes.FilterLinks}>
                             <li className={classes.Active} data-filter="*" onClick={() => {this.onFilterChange("*")}}>All</li>
                             {
-                                Data.map((item, index)=>{
-                                    return <li key={index} data-filter={item.category.slug} onClick={(event) => {this.onFilterChange(item.category.slug, event)}}>{item.category.title}</li>
+                                Data.categoriesTitle.map((item, index)=>{
+                                    return <li key={index} data-filter={item.slug} onClick={(event) => {this.onFilterChange(item.slug, event)}}>{item.title}</li>
                                 })
                             }
                         </ul>
@@ -42,9 +42,9 @@ class FilterGrid extends Component {
                     <div className={`isotope ${classes.ItemsContainer}`} id="grid-container">
                         {
                             Data?
-                                Data.length>0?
-                                    Data.map((item,index) => (
-                                        <Product key={index} className={`grid-item ${item.category.slug}`} {...item}/>
+                                Data.categoriesData.length>0?
+                                    Data.categoriesData.map((item,index) => (
+                                        <Product key={index} className={`grid-item ${item.category}`} {...item}/>
                                     ))
                                 :null
                             :null
