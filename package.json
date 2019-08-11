@@ -1,10 +1,10 @@
 {
-  "homepage": "https://mohamednajiub.github.io/carrefour",
   "name": "carrefour",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mohamednajiub.github.io/carrefour",
   "dependencies": {
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^2.1.1",
     "isotope-layout": "^3.0.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
