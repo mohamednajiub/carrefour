@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/carrefour/static/css/main.7ecda151.chunk.css",
+    "main.css": "/carrefour/static/css/main.8844927d.chunk.css",
     "main.js": "/carrefour/static/js/main.bad48fd3.chunk.js",
     "main.js.map": "/carrefour/static/js/main.bad48fd3.chunk.js.map",
     "runtime~main.js": "/carrefour/static/js/runtime~main.b544e2d8.js",
@@ -9,10 +9,10 @@
     "static/js/2.758fdd3a.chunk.js": "/carrefour/static/js/2.758fdd3a.chunk.js",
     "static/js/2.758fdd3a.chunk.js.map": "/carrefour/static/js/2.758fdd3a.chunk.js.map",
     "index.html": "/carrefour/index.html",
-    "precache-manifest.5204439ba2388314d6af13afcb532282.js": "/carrefour/precache-manifest.5204439ba2388314d6af13afcb532282.js",
+    "precache-manifest.72205d8dfe2594c48dd89808469e01dc.js": "/carrefour/precache-manifest.72205d8dfe2594c48dd89808469e01dc.js",
     "service-worker.js": "/carrefour/service-worker.js",
     "static/css/2.87c40933.chunk.css.map": "/carrefour/static/css/2.87c40933.chunk.css.map",
-    "static/css/main.7ecda151.chunk.css.map": "/carrefour/static/css/main.7ecda151.chunk.css.map",
+    "static/css/main.8844927d.chunk.css.map": "/carrefour/static/css/main.8844927d.chunk.css.map",
     "static/media/slick-theme.css": "/carrefour/static/media/slick.f97e3bbf.svg"
   }
 }
