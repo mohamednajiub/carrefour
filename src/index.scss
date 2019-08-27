@@ -54,3 +54,11 @@ code {
     width: calc(100%/3.3);
   }
 }
+@media screen and (max-width: $small_tablet_max_width){
+  .slick-prev{
+    left: 0 !important;
+  }
+  .slick-next{
+    right: 0 !important;
+  }
+}
