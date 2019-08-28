@@ -29,7 +29,7 @@
 .Close{
     transform: translateX(-100%);
 }
-@media (min-width: $large_tablet_min_width){
+@media (min-width: $large_min_width){
     .SideDrawer{
         display: none;
     }

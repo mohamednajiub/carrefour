@@ -28,7 +28,7 @@
             }
         }
     }
-    @media screen and (max-width: $small_tablet_max_width) {
+    @media screen and (max-width: $large_tablet_max_width) {
         background-color: $white;
         color: $blue_color
     }
@@ -47,10 +47,5 @@
                 color: $red
             }
         }
-    }
-}
-.MobileSearch{
-    img{
-        display: none
     }
 }
