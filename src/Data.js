@@ -32,19 +32,23 @@ export const currencies = [
 export const Categories = [
     {
         label: 'All Categories',
-        value: 'allCategories'
+        value: 'all-categories', 
+        link: 'all-categories'
     },
     {
         label: 'Fresh Food',
-        value: 'freshFood'
+        value: 'fresh-food',
+        link: 'fresh-food'
     },
     {
         label: 'Drinks',
-        value: 'drinks'
+        value: 'drinks',
+        link: 'dinks'
     },
     {
         label: 'Baby',
-        value: 'baby'
+        value: 'baby',
+        link: 'baby'
     }
 ];
 

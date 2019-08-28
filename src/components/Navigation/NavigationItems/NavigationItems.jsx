@@ -4,6 +4,7 @@ import NavigationItem from './NavigationItem/NavigationItem';
 
 
 const navigationItems = (props) => {
+    console.log(props.linksItems)
     return(
         <nav>
             <ul className={[props.className, classes.NavigationItems].join(' ')}>
@@ -11,7 +12,7 @@ const navigationItems = (props) => {
                     return (
                         <NavigationItem key={index} link={link.link}>
                             {link.icon}
-                            {link.title}
+                            {link.title||link.label}
                         </NavigationItem>
                     )
                 })}

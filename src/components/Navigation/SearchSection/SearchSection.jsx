@@ -14,7 +14,8 @@ class SearchSection extends Component{
     state = {
         selectedCategory: {
             label: 'All Categories',
-            value: 'allCategories'
+            value: 'all-categories',
+            link: 'all-categories'
         }
     }
 
