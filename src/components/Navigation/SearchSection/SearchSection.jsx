@@ -28,7 +28,7 @@ class SearchSection extends Component{
             search: '',
         };
         return(
-            <section className={classes.Actions}>
+            <section className={[this.props.className,classes.Actions].join(' ')}>
                 <CarrfourLogo source={Data.logos.carrfour.source} name={Data.logos.carrfour.title}/>
                 <div className={classes.SearchSection}>
                     <Select
