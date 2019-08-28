@@ -8,6 +8,7 @@ import Logo from '../../Logos/Logo';
 import {Link} from 'react-router-dom';
 import {MdShoppingCart} from 'react-icons/md';
 import {Data} from '../../../Data';
+import Notifications from '../../UI/Notifications/Notifications'
 
 class Toolbar extends Component{
     render(){
@@ -18,7 +19,10 @@ class Toolbar extends Component{
                         <div className="MobileOnly">
                             <DrawerToggle clicked={this.props.drawerToggleClicked}/>
                             <Logo source={Data.logos.carrfour.source} name={Data.logos.carrfour.name}/>
-                            <Link to='/cart' className={classes.LinkIcon}><MdShoppingCart /></Link>
+                            <Link to='/cart' className={classes.LinkIcon}>
+                                <MdShoppingCart />
+                                <Notifications className={classes.Notifications} numberOfNotifications={5}/>
+                            </Link>
                         </div>
                         <div className="DesktopOnly">
                             <Information infoNavigation={this.props.infoNavigation}/>
