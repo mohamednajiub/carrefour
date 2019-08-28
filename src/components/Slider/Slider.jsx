@@ -20,7 +20,7 @@ class SliderComponent extends Component {
         pauseOnHover: true,
         responsive: [
             {
-                breakpoint: 320,
+                breakpoint: 425,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,

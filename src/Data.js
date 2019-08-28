@@ -122,15 +122,19 @@ export const Branches = [
 export const HotDeals = {
     categoriesTitle: [
         {
-            slug: 'smart-phones',
+            slug: '*',
+            title: 'All'
+        },
+        {
+            slug: 'hotdeals-smart-phones',
             title: 'Smart Phones'
         },
         {
-            slug: 'baby-world',
+            slug: 'hotdeals-baby-world',
             title: 'Baby World'
         },
         {
-            slug: 'home',
+            slug: 'hotdeals-home',
             title: 'Home'
         },
     ],
@@ -141,7 +145,7 @@ export const HotDeals = {
             price: '199$',
             sale: "50%",
             lastUpdate: '2019/01/01',
-            category: 'baby-world'
+            category: 'hotdeals-baby-world'
         },
         {
             productName: 'Pampers Premiun Core New',
@@ -149,7 +153,7 @@ export const HotDeals = {
             price: '199$',
             sale: "50%",
             lastUpdate: '2019/01/01',
-            category: 'home'
+            category: 'hotdeals-home'
         },
         {
             productName: 'Pampers Premiun Core New',
@@ -157,7 +161,7 @@ export const HotDeals = {
             price: '199$',
             sale: "50%",
             lastUpdate: '2019/01/01',
-            category: 'home'
+            category: 'hotdeals-home'
         },
         {
             productName: 'Pampers Premiun Core New',
@@ -165,7 +169,7 @@ export const HotDeals = {
             price: '199$',
             sale: "50%",
             lastUpdate: '2019/01/01',
-            category: 'home'
+            category: 'hotdeals-home'
         },
         {
             productName: 'Pampers Premiun Core New',
@@ -173,7 +177,7 @@ export const HotDeals = {
             price: '199$',
             sale: "50%",
             lastUpdate: '2019/01/01',
-            category: 'smart-phones'
+            category: 'hotdeals-smart-phones'
         },
         {
             productName: 'Pampers Premiun Core New',
@@ -181,7 +185,94 @@ export const HotDeals = {
             price: '199$',
             sale: "50%",
             lastUpdate: '2019/01/01',
-            category: 'smart-phones'
+            category: 'hotdeals-smart-phones'
+        }
+    ]
+}
+
+export const Products = {
+    categoriesTitle: [
+        {
+            slug: '*',
+            title: 'All'
+        },
+        {
+            slug: 'products-super-market',
+            title: 'Super Market'
+        },
+        {
+            slug: 'products-baby-world',
+            title: 'Baby World'
+        },
+        {
+            slug: 'products-home',
+            title: 'Home'
+        },
+        {
+            slug: 'products-tv',
+            title: 'TV'
+        },
+        {
+            slug: 'products-beauty',
+            title: 'Beauty'
+        }
+    ],
+    categoriesData: [
+        {
+            productName: 'Pampers Premiun Core New',
+            source: './images/products/biore.png',
+            price: '199$',
+            lastUpdate: '2019/01/01',
+            category: 'products-beauty'
+        },
+        {
+            productName: 'Pampers Premiun Core New',
+            source: './images/products/buxton.png',
+            price: '199$',
+            lastUpdate: '2019/01/01',
+            category: 'products-home'
+        },
+        {
+            productName: 'Pampers Premiun Core New',
+            source: './images/products/evian.png',
+            price: '199$',
+            lastUpdate: '2019/01/01',
+            category: 'products-home'
+        },
+        {
+            productName: 'Pampers Premiun Core New',
+            source: './images/products/laneige.png',
+            price: '199$',
+            lastUpdate: '2019/01/01',
+            category: 'products-beauty'
+        },
+        {
+            productName: 'Pampers Premiun Core New',
+            source: './images/products/mountainvalley.png',
+            price: '199$',
+            lastUpdate: '2019/01/01',
+            category: 'products-home'
+        },
+        {
+            productName: 'Pampers Premiun Core New',
+            source: './images/products/valpre.png',
+            price: '199$',
+            lastUpdate: '2019/01/01',
+            category: 'products-home'
+        },
+        {
+            productName: 'Pampers Premiun Core New',
+            source: './images/products/wave.png',
+            price: '199$',
+            lastUpdate: '2019/01/01',
+            category: 'products-beauty'
+        },
+        {
+            productName: 'Pampers Premiun Core New',
+            source: './images/products/nutella.png',
+            price: '199$',
+            lastUpdate: '2019/01/01',
+            category: 'products-home'
         }
     ]
 }

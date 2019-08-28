@@ -8,7 +8,7 @@ class FilterGrid extends Component {
     // Click Function
     onFilterChange = (newFilter) => {
         if (this.iso === undefined) {
-            this.iso = new Isotope('#grid-container', {
+            this.iso = new Isotope(`#${this.props.gridContainer}`, {
                 itemSelector: '.grid-item',
                 layoutMode: 'fitRows',
                 percentPosition: true,
@@ -30,7 +30,6 @@ class FilterGrid extends Component {
                     <header className={classes.InfoContainer}>
                         <Titles title={this.props.componentTitle} subtitle={this.props.componentSubtitle}/>
                         <ul className={classes.FilterLinks}>
-                            <li className={classes.Active} data-filter="*" onClick={() => {this.onFilterChange("*")}}>All</li>
                             {
                                 Data.categoriesTitle.map((item, index)=>{
                                     return <li key={index} data-filter={item.slug} onClick={(event) => {this.onFilterChange(item.slug, event)}}>{item.title}</li>
@@ -39,7 +38,7 @@ class FilterGrid extends Component {
                         </ul>
                     </header>
 
-                    <div className={`isotope ${classes.ItemsContainer}`} id="grid-container">
+                    <div className={`isotope ${classes.ItemsContainer}`} id={this.props.gridContainer}>
                         {
                             Data?
                                 Data.categoriesData.length>0?
