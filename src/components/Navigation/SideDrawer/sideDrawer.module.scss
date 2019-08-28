@@ -1,3 +1,5 @@
+@import '../../../assets/scss/color_variables';
+@import '../../../assets/scss/screen_sizes';
 .SideDrawer{
     position: fixed;
     width: 280px;
@@ -12,6 +14,13 @@
     .SideDrawerNavigation{
         display: flex;
         flex-direction: column;
+        a{
+            color: $red;
+            text-decoration: none
+        }
+    }
+    .Categories{
+        border-bottom: 1px solid #ccc;
     }
 }
 .Open{
