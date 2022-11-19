@@ -8,7 +8,7 @@
     "isotope-layout": "^3.0.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "react-select": "^3.0.4",
     "react-slick": "^0.24.0",
     "slick-carousel": "^1.8.1"
